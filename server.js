@@ -1,4 +1,4 @@
-//impoting third-party connect module
+//importing third-party connect module
 const connect = require('connect');
 
 //instantiate app-server
@@ -23,11 +23,11 @@ function helloJson(req, res, next){
 }
 
 //add middleware to connect application
-app.use('/', helloPlain);
+app.use(helloPlain);
 app.use('/html', helloHtml);
 app.use('/json', helloJson);
 
 //run app
 app.listen(3000);
 
-console.log('Server running at http://localhost:3000');
+console.log('Server running at http://localhost:3000/');
