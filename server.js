@@ -4,6 +4,10 @@ const connect = require('connect');
 //instantiate app-server
 const app = connect();
 
+function logger(req, res, next){
+    console.log(req.method, req.url);
+    next();
+}
 //custom middleware
 function helloPlain(req, res, next){
     res.setHeader('Content-Type','text/plain');
@@ -23,7 +27,7 @@ function helloJson(req, res, next){
 }
 
 //add middleware to connect application
-app.use('',helloPlain);
+app.use('/',helloPlain);
 app.use('/html', helloHtml);
 app.use('/json', helloJson);
 
