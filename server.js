@@ -1,5 +1,5 @@
 //impoting third-party connect module
-const conect = require('connect');
+const connect = require('connect');
 
 //instantiate app-server
 const app = connect();
