@@ -27,7 +27,7 @@ function helloJson(req, res, next){
 }
 
 //add middleware to connect application
-//app.use('/',helloPlain);
+app.use(helloPlain);
 app.use('/html', helloHtml);
 app.use('/json', helloJson);
 
