@@ -1,3 +1,12 @@
+/* 
+Name: Amina Aidarus
+Student number: 301237959
+COURSE: COMP229
+SEM: 3
+LAB : 2
+DESCRIPTION: Create a new Node.Js Application that listens to http requests on port 3000 and return 3 different HTTP responses
+*/
+
 //importing third-party connect module
 const connect = require('connect');
 
